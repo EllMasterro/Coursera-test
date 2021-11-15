@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+.row {
+    width:100%;  
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Acme', sans-serif;
+    font-size: 16px;
+}
+
+.h1 {
+    font-size: 175%;
+    text-align: center;
+}
+
+.cbox {
+    border:1px solid black;
+    width:100%;
+    height: fit-content;
+    background-color: darkgray;
+}
+
+.hd1 {
+    border: 1px solid black;
+    float: right;
+    width:40%;
+    padding: 5px;
+    text-align: center;
+    background-color: blueviolet;
+    font-size: 125%;
+    color: white;
+}
+
+.hd2 {
+    border: 1px solid black;
+    float: right;
+    width:40%;
+    padding: 5px;
+    text-align: center;
+    background-color: cornflowerblue;
+    font-size: 125%;
+    color: white;
+}
+
+.hd3 {
+    border: 1px solid black;
+    float: right;
+    width:40%;
+    padding: 5px;
+    text-align: center;
+    background-color: darkgoldenrod;
+    font-size: 125%;
+    color: white;
+}
+
+.dsc {
+    
+    width: 100%;
+    padding: 15px;
+    padding-top: 40px;
+}
+
+@media (min-width: 992px) {
+    .col-dsk-3, .col-dsk-2, .col-dsk-1
+    {
+        float:left;
+        padding: 10px;
+        border: 1px;
+        
+    }
+    .col-dsk-3{
+        width:33.3%
+    }
+    .col-dsk-2{
+        width:50%;
+    }
+    .col-dsk-1{
+        width: 100%;
+    }
+
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .col-tbl-2, .col-tbl-1{
+        float:left;
+        padding: 10px;
+        border: 1px;
+        
+    }
+    .col-tbl-2{
+        width:50%;       
+    }
+    .col-tbl-1{
+        width:100%;     
+    }    
+}
+
+@media (min-width:1px) and (max-width:767px) {
+    .col-mob-1{
+        width: 100%;
+        float:left;
+        padding: 10px;
+        border: 1px;
+ 
+    } 
+}
