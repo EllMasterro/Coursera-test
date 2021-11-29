@@ -1,0 +1,80 @@
+body {
+	font-size : 16px;
+	color : #fff;
+	background-color : #61122f;
+}
+
+#header-nav {
+	background-color : #f6b319;
+	border-radius : 0;
+	border : 0;
+}
+
+.navbar-header{
+	max-width : 100%;
+	padding-left : 30px;
+}
+
+#collapsable-nav a {
+	font-size : 1.3em;
+	color : #61122f;
+}
+
+#navlist a  {
+	text-align : center;
+}
+
+h1 {
+	color : #61122f;
+}
+
+h2 {
+	font-size : 2em;
+	text-align : center;
+	margin : 10px;
+}
+
+.cbox {
+    border:1px solid black;
+    width:100%;
+    height: fit-content;
+    background-color: darkgray;
+	padding : 15px;
+	margin-top : 15px;
+}
+
+.row {
+	width : 100%;
+	margin: 10px;
+	padding : 10px;
+}
+
+.Menu {
+	margin-right : 20px;
+}
+
+.Mycontainer {
+	justify-content : center;
+	padding:0;
+	margin:0;
+	width : 97%;
+}
+
+#nav-list a {
+	font-weight:bold;
+	text-decoration : none;
+}
+
+.hd1 {
+	font-weight:bold;
+	font-size : 1.8em;
+	text-align : center;
+}
+
+.hd2 {
+	padding-top: 20px;
+	font-weight:bold;
+	font-size : 2.3em;
+	text-align : center;
+}
+
