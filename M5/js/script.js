@@ -90,13 +90,13 @@ $ajaxUtils.sendGetRequest(allCategoriesUrl, buildAndShowHomeHTML, // ***** <----
 // returned from the server.
 function buildAndShowHomeHTML (categories) {
   
-  var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
-  console.log(chosenCategoryShortName);
+  var chosenCategoryShortName = chooseRandomCategory(categories);
+  console.log(chosenCategoryShortName.short_name);
 
   // Load home snippet page
   $ajaxUtils.sendGetRequest(homeHtmlUrl, function (homeHtml) { 
     
-      homeHtml.short_name = chosenCategoryShortName;
+      homeHtml.short_name = chosenCategoryShortName.short_name;
       document.querySelector("#main-content").innerHTML = homeHtml;
       
 
