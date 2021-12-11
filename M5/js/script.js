@@ -96,23 +96,18 @@ function buildAndShowHomeHTML (categories) {
   // Load home snippet page
   $ajaxUtils.sendGetRequest(homeHtmlUrl, function (homeHtml) { 
     
-      //homeHtml.short_name = chosenCategoryShortName.short_name;
-
-      homeHtml = insertProperty(menuItemsTitleHtml, "randomCategoryShortname",chosenCategoryShortName.short_name);
-      console.log(homeHtml);
-
-      //document.querySelector("#main-content").innerHTML = homeHtml;
-      insertHtml("#main-content", homeHtml);
-
-      //homeHtml = insertItemPrice(html, "randomCategoryShortName",chosenCategoryShortName);
-
-      
+   
 
         // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
 
+      //$dc.loadMenuItems(menuItemsUrl+chosenCategoryShortName.short_name);
+
+      var html1 = homeHtml;
+      
+      html1 = insertProperty(html1, "randomCategoryShortName", chosenCategoryShortName.short_name);
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
