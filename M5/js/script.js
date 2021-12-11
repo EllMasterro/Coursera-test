@@ -90,12 +90,13 @@ $ajaxUtils.sendGetRequest(allCategoriesUrl, buildAndShowHomeHTML, // ***** <----
 // returned from the server.
 function buildAndShowHomeHTML (categories) {
   
-  var chosenCategoryShortName = chooseRandomCategory(categories);
-  console.log(chosenCategoryShortName.short_name);
-
+  
   // Load home snippet page
   $ajaxUtils.sendGetRequest(homeHtmlUrl, function (homeHtml) { 
-    
+  
+    var chosenCategoryShortName = chooseRandomCategory(categories);
+    console.log(chosenCategoryShortName.short_name);
+
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
@@ -134,6 +135,7 @@ var insertProperty = function (string, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
   string = string
     .replace(new RegExp(propToReplace, "g"), propValue);
+    console.log(string);
   return string;
 }
 
