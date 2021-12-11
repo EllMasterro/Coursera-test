@@ -96,8 +96,16 @@ function buildAndShowHomeHTML (categories) {
   // Load home snippet page
   $ajaxUtils.sendGetRequest(homeHtmlUrl, function (homeHtml) { 
     
-      homeHtml.short_name = chosenCategoryShortName.short_name;
-      document.querySelector("#main-content").innerHTML = homeHtml;
+      //homeHtml.short_name = chosenCategoryShortName.short_name;
+
+      homeHtml = insertProperty(menuItemsTitleHtml, "randomCategoryShortname",chosenCategoryShortName);
+      console.log(homeHtml);
+
+      //document.querySelector("#main-content").innerHTML = homeHtml;
+      insertHtml("#main-content", homeHtml);
+
+      //homeHtml = insertItemPrice(html, "randomCategoryShortName",chosenCategoryShortName);
+
       
 
         // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
