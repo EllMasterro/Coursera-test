@@ -86,11 +86,6 @@ $ajaxUtils.sendGetRequest(allCategoriesUrl, buildAndShowHomeHTML, // ***** <----
 });
 // *** finish **
 
-$ajaxUtils.sendGetRequest(homeHtmlUrl, function (homeHtml) { 
-  console.log('Test');
-  document.querySelector("#main-content").innerHTML = homeHtml;
-},false);
-
 // Builds HTML for the home page based on categories array
 // returned from the server.
 function buildAndShowHomeHTML (categories) {
@@ -99,7 +94,7 @@ function buildAndShowHomeHTML (categories) {
   console.log(chosenCategoryShortName);
 
   // Load home snippet page
- /* $ajaxUtils.sendGetRequest(homeHtmlUrl, function (homeHtml) { 
+  $ajaxUtils.sendGetRequest(homeHtmlUrl, function (homeHtml) { 
       console.log('Test');
       document.querySelector("#main-content").innerHTML = homeHtml;
 
