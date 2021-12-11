@@ -94,7 +94,7 @@ function buildAndShowHomeHTML (categories) {
   console.log(chosenCategoryShortName);
 
   // Load home snippet page
-  /*$ajaxUtils.sendGetRequest(homeHtmlUrl, function (homeHtml) { 
+  $ajaxUtils.sendGetRequest(homeHtmlUrl, function (homeHtml) { 
     
       document.querySelector("#main-content").innerHTML = homeHtml;
 
